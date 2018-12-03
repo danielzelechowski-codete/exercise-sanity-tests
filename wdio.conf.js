@@ -19,8 +19,9 @@ exports.config = {
   // specs: ['./lib/example/tests/**/*Test.js'],
   suites: {
     todoMvcTestSuite: [
-      "./lib/tests/TodoAngularTest.js",
-      "./lib/tests/FailingTest.js"
+      "./lib/tests/EditTodoAngularTest.js",
+      "./lib/tests/RemoveTodoAngularTest.js",
+      "./lib/tests/ToggleTodoAngularTest.js"
     ]
   },
 

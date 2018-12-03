@@ -1,27 +1,28 @@
-import { BrowserUtils, Reporter } from "wdio-allure-ts";
+import {BrowserUtils, Reporter} from "wdio-allure-ts";
 
 /**
  * Button widget
  */
 export class Button {
-  private selector: string;
-  constructor(selector: string) {
-    this.selector = selector;
-  }
+    private selector: string;
 
-  /**
-   * Click the button
-   */
-  public click(): void {
-    Reporter.debug("Will click button");
-    BrowserUtils.click(this.selector);
-  }
+    constructor(selector: string) {
+        this.selector = selector;
+    }
 
-  /**
-   * Validate button not visible
-   */
-  public notVisible(): void {
-    Reporter.debug("Validate button not visible");
-    BrowserUtils.notVisible(this.selector);
-  }
+    /**
+     * Click the button
+     */
+    public click(): void {
+        Reporter.debug("Will click button");
+        BrowserUtils.click(this.selector);
+    }
+
+    /**
+     * Validate button not visible
+     */
+    public notVisible(): void {
+        Reporter.debug("Validate button not visible");
+        BrowserUtils.notVisible(this.selector);
+    }
 }
